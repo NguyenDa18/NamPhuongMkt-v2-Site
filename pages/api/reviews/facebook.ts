@@ -4,7 +4,7 @@ import { facebookReviews } from '../../../data/facebookReviews'
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
 	try {
 		if (!Array.isArray(facebookReviews)) {
-			throw new Error('Cannot find Yelp reviews')
+			throw new Error('Cannot find Facebook reviews')
 		}
 
 		res.status(200).json(facebookReviews)

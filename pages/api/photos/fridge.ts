@@ -1,13 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../utils/sample-data'
+import { fridgePhotos } from '../../../data/fridgePhotos'
 
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
 	try {
-		if (!Array.isArray(sampleUserData)) {
-			throw new Error('Cannot find user data')
+		if (!Array.isArray(fridgePhotos)) {
+			throw new Error('Cannot find photos')
 		}
 
-		res.status(200).json(sampleUserData)
+		res.status(200).json(fridgePhotos)
 	} catch (err) {
 		res.status(500).json({ statusCode: 500, message: err.message })
 	}

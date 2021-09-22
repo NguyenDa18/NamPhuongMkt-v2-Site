@@ -4,7 +4,7 @@ import { googleReviews } from '../../../data/googleReviews'
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
 	try {
 		if (!Array.isArray(googleReviews)) {
-			throw new Error('Cannot find Yelp reviews')
+			throw new Error('Cannot find Google reviews')
 		}
 
 		res.status(200).json(googleReviews)

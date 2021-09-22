@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Navbar from './Navbar'
@@ -20,16 +19,8 @@ const Layout = ({ children, title = 'Page' }: Props) => {
 			</Head>
 			<header>
 				<nav>
-					<Link href="/">
-						<a>Home</a>
-					</Link>{' '}
-			|{' '}
-					<Link href="/users">
-						<a>Users List</a>
-					</Link>{' '}
-			| <a href="/api/users">Users API</a>
+					<Navbar />
 				</nav>
-				<Navbar />
 			</header>
 			{children}
 			<Footer />

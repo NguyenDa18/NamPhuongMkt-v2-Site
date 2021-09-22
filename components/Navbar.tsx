@@ -10,15 +10,19 @@ import {
 	useColorMode,
 	useColorModeValue,
 	Stack,
+	Text,
+	useBreakpointValue
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, PhoneIcon } from '@chakra-ui/icons'
 import { FaMoon, FaSun } from 'react-icons/fa'
 
 import { NavbarLink } from '../interfaces'
 
-const Links = [
+const Links: NavbarLink[] = [
 	{name: 'Home', link: '/'},
-	{name: 'Find us', link: '/map'}]
+	{name: 'Testimonials', link: '/testimonials'},
+	{name: 'Find us', link: '/map'}
+]
 
 const NavLink = ({ children }: { children: NavbarLink }) => (
 	<Link
@@ -42,17 +46,23 @@ export default function Navbar() {
 
 	return (
 		<>
-			<Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+			<Box bg={useColorModeValue('blue.500', 'gray.900')} px={4}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
 						size={'md'}
 						icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
 						aria-label={'Open Menu'}
 						display={{ md: 'none' }}
+						backgroundColor={useColorModeValue('white', 'gray.700')}
 						onClick={isOpen ? onClose : onOpen}
 					/>
 					<HStack spacing={8} alignItems={'center'}>
-						<Box>Logo</Box>
+						<Text
+							textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+							fontFamily={'heading'}
+							color={useColorModeValue('black', 'white')}>
+								Nam Phuong Market
+						</Text>
 						<HStack
 							as={'nav'}
 							spacing={4}
@@ -63,6 +73,15 @@ export default function Navbar() {
 						</HStack>
 					</HStack>
 					<Flex alignItems={'center'}>
+						<Button
+							href='tel:+19712551588'
+							variant={'solid'}
+							colorScheme={useColorModeValue('red', 'teal')}
+							size={'sm'}
+							mr={4}
+							leftIcon={<PhoneIcon />}>
+								Call Us
+						</Button>
 						<Button
 							variant={'solid'}
 							colorScheme={colorMode === 'dark' ? 'teal' : 'yellow'}
