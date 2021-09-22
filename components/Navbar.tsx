@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReactNode } from 'react'
 import {
 	Box,
 	Flex,
@@ -15,11 +14,13 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { FaMoon, FaSun } from 'react-icons/fa'
 
+import { NavbarLink } from '../interfaces'
+
 const Links = [
 	{name: 'Home', link: '/'},
 	{name: 'Find us', link: '/map'}]
 
-const NavLink = ({ children }: { children: { name: string, link: string } }) => (
+const NavLink = ({ children }: { children: NavbarLink }) => (
 	<Link
 		px={2}
 		py={1}

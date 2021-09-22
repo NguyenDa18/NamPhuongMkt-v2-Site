@@ -44,7 +44,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 export default function HeroImage() {
 	return (
 		<Container maxW={'5xl'} py={12}>
-			<Flex flex={1}>
+			<Flex flex={2}>
 				<Image
 					rounded={'md'}
 					alt={'feature image'}
