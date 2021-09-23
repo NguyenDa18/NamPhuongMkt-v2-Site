@@ -8,7 +8,7 @@ import {
 	useColorModeValue,
 	VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaYelp } from 'react-icons/fa'
 import { ReactNode } from 'react'
   
 const Logo = (props: any) => {
@@ -76,11 +76,11 @@ const Footer = (): JSX.Element => (
 			<Logo />
 			<Text>© {new Date().getFullYear()} . All rights reserved</Text>
 			<Stack direction={'row'} spacing={6}>
-				<SocialButton label={'Twitter'} href={'#'}>
-					<FaTwitter />
+				<SocialButton label={'Facebook'} href={'https://www.facebook.com/namphuongmkt/'}>
+					<FaFacebookF />
 				</SocialButton>
-				<SocialButton label={'YouTube'} href={'#'}>
-					<FaYoutube />
+				<SocialButton label={'Yelp'} href={'https://www.yelp.com/biz/nam-phuong-market-portland'}>
+					<FaYelp />
 				</SocialButton>
 				<SocialButton label={'Instagram'} href={'#'}>
 					<FaInstagram />

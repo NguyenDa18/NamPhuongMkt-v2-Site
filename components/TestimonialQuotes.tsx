@@ -8,6 +8,7 @@ import {
 	SimpleGrid,
 	useColorModeValue,
 } from '@chakra-ui/react'
+import { FaFacebookF, FaGoogle, FaYelp } from 'react-icons/fa'
   
 const testimonials = [
 	{
@@ -150,15 +151,21 @@ export default function TestimonialQuotes() {
 	return (
 		<Flex
 			textAlign={'center'}
-			pt={10}
+			pt={90}
 			justifyContent={'center'}
 			direction={'column'}
 			width={'full'}>
 			<Tabs isFitted variant="enclosed">
 				<TabList mb="1em">
-					<Tab>One</Tab>
-					<Tab>Two</Tab>
-					<Tab>Three</Tab>
+					<Tab>
+						<FaGoogle />
+					</Tab>
+					<Tab>
+						<FaYelp />
+					</Tab>
+					<Tab>
+						<FaFacebookF />
+					</Tab>
 				</TabList>
 				<TabPanels>
 					<TabPanel>

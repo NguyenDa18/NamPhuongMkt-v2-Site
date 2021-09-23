@@ -7,13 +7,12 @@ import {
 	Heading,
 	Text,
 	Stack,
-	StackDivider,
 	Icon,
 	useColorModeValue,
 	Box,
 } from '@chakra-ui/react'
 import { ReactElement } from 'react'
-import { FaClock, FaShoppingBasket } from 'react-icons/fa'
+import { FaClock, FaCreditCard, FaShoppingBasket } from 'react-icons/fa'
 import { PhoneIcon } from '@chakra-ui/icons'
   
   interface FeatureProps {
@@ -31,12 +30,12 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 				align={'center'}
 				justify={'center'}
 				rounded={'full'}
-				bg={useColorModeValue('yellow.500', 'teal.300')}
+				bg={useColorModeValue('yellow.400', 'teal.300')}
 				mb={1}>
 				{icon}
 			</Flex>
 			<Text fontWeight={600}>{title}</Text>
-			<Text color={'gray.600'}>{text}</Text>
+			<Text color={useColorModeValue('black', 'gray.200')}>{text}</Text>
 		</Stack>
 	)
 }
@@ -71,7 +70,7 @@ export default function HeroImage() {
 				We&apos;re a small family operated market serving your needs for Asian goods, vegetables, meat, and seafood. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We believe that the charm of a small ethnic specialty shop is superior to any department store, connecting time and cultures. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination. Come visit, and you will leave with an interesting story.
 				</Text>
 				<Box p={4}>
-					<SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+					<SimpleGrid columns={{ base: 2, lg: 4}} spacing={10}>
 						<Feature
 							icon={<Icon as={FaClock} w={10} h={10} />}
 							title={'Open Everyday'}
@@ -80,17 +79,24 @@ export default function HeroImage() {
 							}
 						/>
 						<Feature
-							icon={<Icon as={PhoneIcon} w={10} h={10} />}
-							title={'Unlimited Donations'}
+							icon={<Icon as={FaShoppingBasket} w={10} h={10} />}
+							title={'Address'}
 							text={
-								'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+								'6834 NE Sandy Blvd. Portland, OR 97213'
 							}
 						/>
 						<Feature
-							icon={<Icon as={FaShoppingBasket} w={10} h={10} />}
-							title={'Instant Delivery'}
+							icon={<Icon as={PhoneIcon} w={10} h={10} />}
+							title={'Phone Number'}
 							text={
-								'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+								'(971) 255-1588'
+							}
+						/>
+						<Feature
+							icon={<Icon as={FaCreditCard} w={10} h={10} />}
+							title={'Accepted'}
+							text={
+								'EBT, Credit & Debit'
 							}
 						/>
 					</SimpleGrid>

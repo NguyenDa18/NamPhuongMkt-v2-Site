@@ -59,7 +59,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<Box position="fixed" w="100%" zIndex={1} backgroundColor={useColorModeValue('blue.500', 'gray.900')} px={4}>
+			<Box position="fixed" w="100%" zIndex={1} backgroundColor={useColorModeValue('blue.300', 'gray.900')} px={4}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
 						size={'md'}
@@ -87,7 +87,14 @@ export default function Navbar() {
 							))}
 							<Flex>
 								<Menu isLazy>
-									<MenuButton>
+									<MenuButton 
+										rounded={'md'}
+										px={2}
+										py={1} 		
+										_hover={{
+											textDecoration: 'none',
+											bg: useColorModeValue('gray.200', 'gray.700'),
+										}}>
 										Photos
 									</MenuButton>
 									<MenuList>
