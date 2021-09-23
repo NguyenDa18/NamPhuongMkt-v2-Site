@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Box } from '@chakra-ui/layout'
 
 type Props = {
   children?: ReactNode
@@ -22,7 +23,9 @@ const Layout = ({ children, title = 'Page' }: Props) => {
 					<Navbar />
 				</nav>
 			</header>
-			{children}
+			<Box minHeight="100vh" display="flex" flexDir="column">
+				{children}
+			</Box>
 			<Footer />
 		</div>
 	)

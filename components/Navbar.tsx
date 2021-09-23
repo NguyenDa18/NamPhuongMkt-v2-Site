@@ -33,7 +33,8 @@ const Links: NavbarLink[] = [
 const GalleryLinks: NavbarLink[] = [
 	{name: 'Grocery', link: '/grocery'},
 	{name: 'Kitchen Supplies', link: '/kitchen'},
-	{name: 'Fresh Vegetables', link: '/vegetables'}
+	{name: 'Fresh Vegetables', link: '/vegetables'},
+	{name: 'Fridge Products', link: '/photos/fridge'}
 ]
 
 const NavLink = ({ children }: { children: NavbarLink }) => (
@@ -58,7 +59,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<Box bg={useColorModeValue('blue.500', 'gray.900')} px={4}>
+			<Box position="fixed" w="100%" zIndex={1} backgroundColor={useColorModeValue('blue.500', 'gray.900')} px={4}>
 				<Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
 					<IconButton
 						size={'md'}

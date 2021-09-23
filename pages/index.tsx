@@ -2,7 +2,7 @@ import React from 'react'
 import { GetStaticProps } from 'next'
 import Layout from '../components/Layout'
 import HeroPage from '../components/HeroPage'
-import { Flex, Heading, Input, Button, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Heading, Input, Button, useColorModeValue, Box } from '@chakra-ui/react'
 
 const IndexPage = () => {
 	const formBackground = useColorModeValue('gray.100', 'gray.700')
