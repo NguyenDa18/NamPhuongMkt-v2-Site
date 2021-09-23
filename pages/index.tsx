@@ -1,5 +1,4 @@
 import React from 'react'
-import { GetStaticProps } from 'next'
 import Layout from '../components/Layout'
 import HeroPage from '../components/HeroPage'
 import { Flex, Heading, Input, Button, useColorModeValue, Box } from '@chakra-ui/react'

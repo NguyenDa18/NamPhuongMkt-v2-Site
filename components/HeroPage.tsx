@@ -10,33 +10,33 @@ import {
 	StackDivider,
 	Icon,
 	useColorModeValue,
+	Box,
 } from '@chakra-ui/react'
-import {
-	IoAnalyticsSharp,
-	IoLogoBitcoin,
-	IoSearchSharp,
-} from 'react-icons/io5'
 import { ReactElement } from 'react'
+import { FaClock, FaShoppingBasket } from 'react-icons/fa'
+import { PhoneIcon } from '@chakra-ui/icons'
   
   interface FeatureProps {
+    title: string;
     text: string;
-    iconBg: string;
-    icon?: ReactElement;
+    icon: ReactElement;
   }
   
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+const Feature = ({ title, text, icon }: FeatureProps) => {
 	return (
-		<Stack direction={'row'} align={'center'}>
+		<Stack>
 			<Flex
-				w={8}
-				h={8}
+				w={16}
+				h={16}
 				align={'center'}
 				justify={'center'}
 				rounded={'full'}
-				bg={iconBg}>
+				bg={useColorModeValue('yellow.500', 'teal.300')}
+				mb={1}>
 				{icon}
 			</Flex>
-			<Text fontWeight={600}>{text}</Text>
+			<Text fontWeight={600}>{title}</Text>
+			<Text color={'gray.600'}>{text}</Text>
 		</Stack>
 	)
 }
@@ -47,7 +47,7 @@ export default function HeroImage() {
 			<Flex flex={2}>
 				<Image
 					rounded={'md'}
-					alt={'feature image'}
+					alt={'Market Front'}
 					src={
 						'https://res.cloudinary.com/dnguyen/image/upload/v1631161662/namphuong/store-newfront_mcwsqn.jpg'
 					}
@@ -66,38 +66,35 @@ export default function HeroImage() {
 					rounded={'md'}>
               Our Story
 				</Text>
-				<Heading>A digital Product design agency</Heading>
+				<Heading>Established Since 1997</Heading>
 				<Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore
+				We&apos;re a small family operated market serving your needs for Asian goods, vegetables, meat, and seafood. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We believe that the charm of a small ethnic specialty shop is superior to any department store, connecting time and cultures. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination. Come visit, and you will leave with an interesting story.
 				</Text>
-				<Stack
-					spacing={4}
-					divider={
-						<StackDivider
-							borderColor={useColorModeValue('gray.100', 'gray.700')}
+				<Box p={4}>
+					<SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+						<Feature
+							icon={<Icon as={FaClock} w={10} h={10} />}
+							title={'Open Everyday'}
+							text={
+								'10:30 AM - 5:00 PM'
+							}
 						/>
-					}>
-					<Feature
-						icon={
-							<Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-						}
-						iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-						text={'Business Planning'}
-					/>
-					<Feature
-						icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-						iconBg={useColorModeValue('green.100', 'green.900')}
-						text={'Financial Planning'}
-					/>
-					<Feature
-						icon={
-							<Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-						}
-						iconBg={useColorModeValue('purple.100', 'purple.900')}
-						text={'Market Analysis'}
-					/>
-				</Stack>
+						<Feature
+							icon={<Icon as={PhoneIcon} w={10} h={10} />}
+							title={'Unlimited Donations'}
+							text={
+								'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+							}
+						/>
+						<Feature
+							icon={<Icon as={FaShoppingBasket} w={10} h={10} />}
+							title={'Instant Delivery'}
+							text={
+								'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+							}
+						/>
+					</SimpleGrid>
+				</Box>
 			</Stack>
 		</Container>
 	)
