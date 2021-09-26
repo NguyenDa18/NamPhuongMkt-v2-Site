@@ -10,8 +10,8 @@ interface GalleryProps {
 
 export default function PhotoGallery({ photos }: GalleryProps) {
 	return (
-		<Container maxW="xl" mt="95px" flex={1}>
-			<SimpleGrid columns={{ base: 1, lg: 2}} spacing={5} mt={6}>
+		<Container maxW="8xl" mt="95px" flex={1}>
+			<SimpleGrid columns={{ base: 1, md: 2, lg: 3}} spacing={5}>
 				{photos.map((photo, idx) => (
 					<PhotoCard key={idx} photo={photo} />
 				))}
