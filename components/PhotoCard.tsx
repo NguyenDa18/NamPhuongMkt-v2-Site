@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Flex, Text} from '@chakra-ui/layout'
+import { useColorModeValue } from '@chakra-ui/color-mode'
 import { Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
@@ -8,16 +9,21 @@ import { GalleryImage } from '../interfaces'
 const MotionImg = motion(Image)
 
 interface CardProps {
-    photo: GalleryImage
+    photo: GalleryImage,
+	onImageClick: (photo: GalleryImage) => void
 }
 
-export default function PhotoCard({ photo }: CardProps) {
+export default function PhotoCard({ photo, onImageClick }: CardProps) {
 	return (
 		<Box 
-			borderRadius={['sm', null, 'md']} overflow="hidden">
+			backgroundColor={useColorModeValue('gray.200', 'gray.700')}
+			borderRadius={['sm', null, 'md']}
+			boxShadow="lg"
+			overflow="hidden">
 			<Box
+				onClick={() => onImageClick(photo)}
 				cursor="pointer"
-				h="250px"
+				h="200px"
 				position="relative"
 				overflow="hidden">
 				<MotionImg
@@ -29,6 +35,11 @@ export default function PhotoCard({ photo }: CardProps) {
 					src={photo.src}
 				/>
 			</Box>
+			<Flex px={'4'} py={'2'} align='center' justify='space-between' w='100%'>
+				<Text>
+					{photo.caption}
+				</Text>
+			</Flex>
 		</Box>
 	)
 }

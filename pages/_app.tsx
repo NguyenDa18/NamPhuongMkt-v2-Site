@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
+// Global fonts
 import '@fontsource/raleway/400.css'
 import '@fontsource/open-sans/700.css'
 
