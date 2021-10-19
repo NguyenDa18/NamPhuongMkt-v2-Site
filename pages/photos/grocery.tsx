@@ -4,7 +4,6 @@ import Layout from '../../components/Layout'
 import PhotoGallery from '../../components/PhotoGallery'
 
 import { GalleryImage } from '../../interfaces'
-import { groceryPhotos } from '../../data/groceryPhotos'
 
 type Props = {
 	photos: GalleryImage[]
@@ -19,6 +18,8 @@ export default function GroceryPhotos({ photos }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const photos: GalleryImage[] = groceryPhotos
+	const result = await fetch('http://localhost:3000/api/photos/grocery')
+	const data = await result.json()
+	const photos: GalleryImage[] = data
 	return { props: { photos }}
 }

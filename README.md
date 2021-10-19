@@ -1,4 +1,4 @@
-# TypeScript Next.js example
+# Nam Phuong Market Next.Js site
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 

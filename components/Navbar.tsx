@@ -27,7 +27,8 @@ import { NavbarLink } from '../interfaces'
 const Links: NavbarLink[] = [
 	{name: 'Home', link: '/'},
 	{name: 'Testimonials', link: '/testimonials'},
-	{name: 'Find us', link: '/map'}
+	{name: 'Find us', link: '/map'},
+	{name: 'Contact us', link: '/contact'}
 ]
 
 const GalleryLinks: NavbarLink[] = [

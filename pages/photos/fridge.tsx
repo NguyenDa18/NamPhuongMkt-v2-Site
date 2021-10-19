@@ -3,7 +3,6 @@ import { GetStaticProps } from 'next'
 import Layout from '../../components/Layout'
 import PhotoGallery from '../../components/PhotoGallery'
 
-import { fridgePhotos } from '../../data/fridgePhotos'
 import { GalleryImage } from '../../interfaces'
 
 type Props = {
@@ -19,6 +18,8 @@ export default function FridgePhotos({ photos }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const photos: GalleryImage[] = fridgePhotos
+	const result = await fetch('http://localhost:3000/api/photos/fridge')
+	const data = await result.json()
+	const photos: GalleryImage[] = data
 	return { props: { photos }}
 }
