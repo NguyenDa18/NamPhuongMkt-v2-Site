@@ -14,12 +14,11 @@ import {
 import { ReactElement } from 'react'
 import { FaClock, FaCreditCard, FaShoppingBasket } from 'react-icons/fa'
 import { PhoneIcon } from '@chakra-ui/icons'
-  
-  interface FeatureProps {
-    title: string;
-    text: string;
-    icon: ReactElement;
-  }
+interface FeatureProps {
+	title: string;
+	text: string;
+	icon: ReactElement;
+}
   
 const Feature = ({ title, text, icon }: FeatureProps) => {
 	return (

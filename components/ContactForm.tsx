@@ -1,13 +1,11 @@
 import React from 'react'
 import {
 	Button,
-	Checkbox,
 	Flex,
 	FormControl,
 	FormLabel,
 	Heading,
 	Input,
-	Link,
 	Stack,
 	Image,
 	Textarea
@@ -29,7 +27,7 @@ export default function ContactForm() {
 					</FormControl>
 					<Stack spacing={6}>
 						<Button colorScheme={'blue'} variant={'solid'}>
-                Submit
+							Submit
 						</Button>
 					</Stack>
 				</Stack>
