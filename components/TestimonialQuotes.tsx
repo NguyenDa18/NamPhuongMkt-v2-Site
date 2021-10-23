@@ -32,7 +32,7 @@ const TestimonialCard = (props: Review) => {
 			position={'relative'}
 			bg={useColorModeValue('white', 'gray.700')}>
 			<VStack align={'top'}>
-				<Box color={'green.400'} px={2} alignItems='center'>
+				<Box color={useColorModeValue('red', 'teal')} px={2} alignItems='center'>
 					{[...Array(stars).keys()].map(i => (
 						<Icon key={i} as={StarIcon} />
 					))}
