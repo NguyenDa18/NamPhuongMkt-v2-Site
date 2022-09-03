@@ -17,19 +17,21 @@ export default function ContactForm() {
 			<Flex p={8} flex={1} align={'center'} justify={'center'}>
 				<Stack spacing={4} w={'full'} maxW={'md'}>
 					<Heading fontSize={'2xl'}>Contact Us</Heading>
-					<FormControl id="email">
-						<FormLabel>Email address</FormLabel>
-						<Input type="email" />
-					</FormControl>
-					<FormControl id="content">
-						<FormLabel>Message</FormLabel>
-						<Textarea placeholder="Enter some content" />
-					</FormControl>
-					<Stack spacing={6}>
-						<Button colorScheme={'blue'} variant={'solid'}>
-							Submit
-						</Button>
-					</Stack>
+					<form action="/success" name="contact" method="POST" data-netlify="true">
+						<FormControl id="email">
+							<FormLabel>Email address</FormLabel>
+							<Input type="email" />
+						</FormControl>
+						<FormControl id="content">
+							<FormLabel>Message</FormLabel>
+							<Textarea placeholder="Enter some content" />
+						</FormControl>
+						<Stack spacing={6}>
+							<Button colorScheme={'blue'} variant={'solid'} type="submit">
+								Submit
+							</Button>
+						</Stack>
+					</form>
 				</Stack>
 			</Flex>
 			<Flex flex={1}>
