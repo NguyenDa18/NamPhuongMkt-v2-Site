@@ -18,13 +18,14 @@ export default function ContactForm() {
 				<Stack spacing={4} w={'full'} maxW={'md'}>
 					<Heading fontSize={'2xl'}>Contact Us</Heading>
 					<form action="/success" name="contact" method="POST" data-netlify="true">
+						<input type='hidden' name='form-name' value='contact' />
 						<FormControl id="email">
 							<FormLabel>Email address</FormLabel>
-							<Input type="email" />
+							<Input type="email" name="email" />
 						</FormControl>
 						<FormControl id="content">
 							<FormLabel>Message</FormLabel>
-							<Textarea placeholder="Enter some content" />
+							<Textarea placeholder="Enter some content" name="message" />
 						</FormControl>
 						<Stack spacing={6}>
 							<Button colorScheme={'blue'} variant={'solid'} type="submit">
