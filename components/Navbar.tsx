@@ -25,9 +25,8 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 import { NavbarLink } from '../interfaces'
 
 const Links: NavbarLink[] = [
-	{name: 'Home', link: '/'},
-	{name: 'Testimonials', link: '/testimonials'},
 	{name: 'Find us', link: '/map'},
+	{name: 'Testimonials', link: '/testimonials'},
 	{name: 'Contact us', link: '/contact'}
 ]
 
@@ -83,9 +82,6 @@ export default function Navbar() {
 							as={'nav'}
 							spacing={4}
 							display={{ base: 'none', md: 'flex' }}>
-							{Links.map((link) => (
-								<NavLink key={link.name}>{link}</NavLink>
-							))}
 							<Flex>
 								<Menu isLazy>
 									<MenuButton 
@@ -109,6 +105,9 @@ export default function Navbar() {
 									</MenuList>
 								</Menu>
 							</Flex>
+							{Links.map((link) => (
+								<NavLink key={link.name}>{link}</NavLink>
+							))}
 						</HStack>
 					</HStack>
 					<Flex alignItems={'center'}>

@@ -10,6 +10,10 @@ import {
 	Icon,
 	useColorModeValue,
 	Box,
+	Alert,
+	AlertDescription,
+	AlertIcon,
+	AlertTitle
 } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 import { FaClock, FaCreditCard, FaShoppingBasket } from 'react-icons/fa'
@@ -42,6 +46,11 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 export default function HeroImage() {
 	return (
 		<Container maxW={'5xl'} py={12}>
+			<Alert status='warning' variant='left-accent' py={6}>
+				<AlertIcon />
+				<AlertTitle>Our store is under construction 🚧</AlertTitle>
+				<AlertDescription>We are still open!</AlertDescription>
+			</Alert>
 			<Flex flex={2}>
 				<Image
 					rounded={'md'}
