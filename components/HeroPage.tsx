@@ -56,7 +56,7 @@ export default function HeroImage() {
 					rounded={'md'}
 					alt={'Market Front'}
 					src={
-						'https://res.cloudinary.com/dnguyen/image/upload/v1631161662/namphuong/store-newfront_mcwsqn.jpg'
+						'https://res.cloudinary.com/dnguyen/image/upload/v1662279232/namphuong/NPMarket%20Landscape.jpg'
 					}
 					objectFit={'cover'}
 				/>
