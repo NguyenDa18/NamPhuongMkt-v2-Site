@@ -23,6 +23,13 @@ export const veggiesPhotos: GalleryImage[] = [
 		'caption': 'Fresh herbs'
 	},
 	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1662276410/NPMkt/vegetables/IMG_4211_yqakim.jpg',
+		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1662276410/NPMkt/vegetables/IMG_4211_yqakim.jpg',
+		'thumbnailHeight': 350,
+		'thumbnailWidth': 500,
+		'caption': 'Bitter melon, green papaya, and pickles'
+	},
+	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1609835096/namphuong/veggies/herbs_leaves_kutpgm.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1609835096/namphuong/veggies/herbs_leaves_kutpgm.jpg',
 		'thumbnailHeight': 350,

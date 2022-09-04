@@ -101,7 +101,6 @@ export default function Navbar() {
 											</MenuItem>
 										))}
 										<MenuDivider />
-										<MenuItem>Safety Guidelines</MenuItem>
 									</MenuList>
 								</Menu>
 							</Flex>
