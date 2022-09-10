@@ -36,7 +36,7 @@ export default function PhotoGallery({ photos }: GalleryProps) {
 						</ModalHeader>
 						<ModalCloseButton />
 						<ModalBody>
-							<Image src={selectedPhoto.src} alt={selectedPhoto.caption} layout="fill" />
+							<img src={selectedPhoto.src} alt={selectedPhoto.caption} />
 						</ModalBody>
 						<ModalFooter>
 							<Button onClick={onClose}>Close</Button>

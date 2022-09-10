@@ -19,8 +19,6 @@ export default function GroceryPhotos({ photos }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	// const result = await fetch('http://localhost:3000/api/photos/grocery')
-	// const data = await result.json()
 	const data = groceryPhotos
 	const photos: GalleryImage[] = data
 	return { props: { photos }}

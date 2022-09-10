@@ -48,7 +48,7 @@ export default function HeroImage() {
 		<Container maxW={'5xl'} py={12}>
 			<Alert status='warning' variant='left-accent' py={6}>
 				<AlertIcon />
-				<AlertTitle>Our store is under construction 🚧</AlertTitle>
+				<AlertTitle>Our store is being remodeled 🚧</AlertTitle>
 				<AlertDescription>We are still open!</AlertDescription>
 			</Alert>
 			<Flex flex={2}>

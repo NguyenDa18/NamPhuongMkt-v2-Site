@@ -3,38 +3,23 @@ import { GalleryImage } from '../interfaces'
 export const groceryPhotos: GalleryImage[] = [
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1570258422/namphuong/grocery/candy-shelf_z6y12h.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570258422/namphuong/grocery/candy-shelf_z6y12h.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
 		'caption': 'Candy shelf'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1567927996/namphuong/grocery/candies_yjegsv.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1567927996/namphuong/grocery/candies_yjegsv.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
 		'caption': 'Sweet candies and treats'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570259066/namphuong/grocery/chips_vlxdzg.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570259066/namphuong/grocery/chips_vlxdzg.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
 		'caption': 'Assorted shrimp chips'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611088610/namphuong/grocery/foods/IMG_6289_cg4bsu.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1611088610/namphuong/grocery/foods/IMG_6289_cg4bsu.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 300,
 		'caption': 'Chips shelf'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611088372/namphuong/grocery/foods/IMG_6271_zk3kgf.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1611088372/namphuong/grocery/foods/IMG_6271_zk3kgf.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Bubble tea tapioca pearls'
+		'src': '/images/grocery/IMG_4183.jpg',
+		'caption': 'Curry pastes'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1571203108/namphuong/grocery/quocviet_gmdomb.jpg',

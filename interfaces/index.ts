@@ -11,8 +11,8 @@ export interface Review {
 
 export interface GalleryImage {
   src: string,
-  thumbnail: string,
-  thumbnailHeight: number,
-  thumbnailWidth: number,
+  thumbnail?: string,
+  thumbnailHeight?: number,
+  thumbnailWidth?: number,
   caption: string
 }
