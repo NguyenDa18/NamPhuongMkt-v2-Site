@@ -3,6 +3,7 @@ import {
 	Box,
 	Flex,
 	HStack,
+	VStack,
 	Divider,
 	Link,
 	IconButton,
@@ -118,7 +119,7 @@ export default function Navbar() {
 							size={'sm'}
 							mr={4}
 							leftIcon={<PhoneIcon />}>
-								Call Us
+								Call
 						</Button>
 						<Button
 							variant={'solid'}
@@ -133,16 +134,16 @@ export default function Navbar() {
 
 				{isOpen ? (
 					<Box pb={4} display={{ md: 'none' }}>
-						<Stack as={'nav'} spacing={4}>
+						<VStack as={'nav'} spacing={4}>
 							{Links.map((link) => (
 								<NavLink key={link.name}>{link}</NavLink>
 							))}
 							<Divider />
-							<Text>Photos</Text>
+							<Text as='b'>Photos</Text>
 							{GalleryLinks.map(link => (
 								<NavLink key={link.name}>{link}</NavLink>
 							))}
-						</Stack>
+						</VStack>
 					</Box>
 				) : null}
 			</Box>

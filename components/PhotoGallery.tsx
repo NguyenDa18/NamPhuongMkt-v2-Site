@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { Container, SimpleGrid } from '@chakra-ui/layout'
 
 import PhotoCard from './PhotoCard'
 import { GalleryImage } from '../interfaces'
 import { useDisclosure } from '@chakra-ui/hooks'
 import { Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/modal'
-import { Img } from '@chakra-ui/image'
 import { Button } from '@chakra-ui/button'
 
 interface GalleryProps {
@@ -22,7 +22,7 @@ export default function PhotoGallery({ photos }: GalleryProps) {
 	}
 	return (
 		<Container maxW="8xl" mt="95px" flex={1}>
-			<SimpleGrid columns={{ base: 1, md: 2, lg: 3}} spacing={5}>
+			<SimpleGrid columns={{ base: 1, md: 2, lg: 4}} spacing={5}>
 				{photos.map((photo, idx) => (
 					<PhotoCard key={idx} photo={photo} onImageClick={view} />
 				))}
@@ -36,7 +36,7 @@ export default function PhotoGallery({ photos }: GalleryProps) {
 						</ModalHeader>
 						<ModalCloseButton />
 						<ModalBody>
-							<Img src={selectedPhoto.src} alt={selectedPhoto.caption} />
+							<Image src={selectedPhoto.src} alt={selectedPhoto.caption} layout="fill" />
 						</ModalBody>
 						<ModalFooter>
 							<Button onClick={onClose}>Close</Button>

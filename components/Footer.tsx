@@ -8,7 +8,7 @@ import {
 	useColorModeValue,
 	VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaFacebookF, FaInstagram, FaYelp } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaYelp, FaGoogle } from 'react-icons/fa'
 import { ReactNode } from 'react'
   
 const SocialButton = ({
@@ -63,8 +63,8 @@ const Footer = (): JSX.Element => (
 				<SocialButton label={'Yelp'} href={'https://www.yelp.com/biz/nam-phuong-market-portland'}>
 					<FaYelp />
 				</SocialButton>
-				<SocialButton label={'Instagram'} href={'#'}>
-					<FaInstagram />
+				<SocialButton label={'Google'} href={'https://www.google.com/search?q=nam+phuong+market&oq=nam&aqs=chrome.1.69i60j69i59j69i57j69i65l2j69i60j69i65j69i60.1224j0j1&sourceid=chrome&ie=UTF-8#lrd=0x5495a13632dafcb5:0xd7bdf78e08fe874c,1,,,'}>
+					<FaGoogle />
 				</SocialButton>
 			</Stack>
 		</Container>

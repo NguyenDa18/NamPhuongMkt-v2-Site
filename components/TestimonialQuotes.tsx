@@ -66,7 +66,7 @@ const ReviewGrid = (props: { reviews: Review[], brand: string }) => {
   
 export default function TestimonialQuotes() {
 	return (
-		<Container maxW={'6xl'}>
+		<Container maxW={'xl'}>
 			<Flex
 				textAlign={'center'}
 				pt={90}

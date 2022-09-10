@@ -58,7 +58,10 @@ export default function HeroImage() {
 					src={
 						'https://res.cloudinary.com/dnguyen/image/upload/v1662279232/namphuong/NPMarket%20Landscape.jpg'
 					}
-					objectFit={'cover'}
+					fit={'cover'}
+					align={'center'}
+					w={'100%'}
+					h={{ base: '100%', sm: '300px', md: '400px', lg: '480px' }}
 				/>
 			</Flex>
 			<Stack spacing={6} w={'full'}>
