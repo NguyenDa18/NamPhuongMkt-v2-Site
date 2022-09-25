@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import TestimonialQuotes from '../components/TestimonialQuotes'
+import Layout from '@/components/Layout'
+import TestimonialQuotes from '@/components/TestimonialQuotes'
 
 const TestimonialsPage = () => {
 	return (

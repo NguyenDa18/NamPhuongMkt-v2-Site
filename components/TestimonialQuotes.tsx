@@ -13,9 +13,9 @@ import {
 } from '@chakra-ui/react'
 import { FaFacebookF, FaGoogle, FaYelp } from 'react-icons/fa'
 import { Review } from '../interfaces'
-import { facebookReviews } from '../data/facebookReviews'
-import { googleReviews } from '../data/googleReviews'
-import { yelpReviews } from '../data/yelpReviews'
+import { facebookReviews } from '@/data/facebookReviews'
+import { googleReviews } from '@/data/googleReviews'
+import { yelpReviews } from '@/data/yelpReviews'
 import { StarIcon } from '@chakra-ui/icons'
   
 const TestimonialCard = (props: Review) => {

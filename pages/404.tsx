@@ -1,6 +1,6 @@
 import { Box, Stack, Container, Heading } from '@chakra-ui/layout'
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
 
 const NotFound = () => {
 	return (

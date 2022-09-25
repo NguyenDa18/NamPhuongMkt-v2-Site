@@ -9,7 +9,7 @@ import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 
-import theme from '../styles/theme'
+import theme from '@/styles/theme'
 
 function App({ Component, pageProps }) {
 	return (
