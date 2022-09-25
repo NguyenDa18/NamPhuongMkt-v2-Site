@@ -24,8 +24,7 @@ interface FeatureProps {
 	icon: ReactElement;
 }
   
-const Feature = ({ title, text, icon }: FeatureProps) => {
-	return (
+const Feature = ({ title, text, icon }: FeatureProps) => (
 		<Stack>
 			<Flex
 				w={16}
@@ -40,8 +39,8 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 			<Text fontWeight={600}>{title}</Text>
 			<Text color={useColorModeValue('black', 'gray.200')}>{text}</Text>
 		</Stack>
-	)
-}
+)
+
   
 export default function HeroImage() {
 	return (
@@ -62,6 +61,10 @@ export default function HeroImage() {
 					align={'center'}
 					w={'100%'}
 					h={{ base: '100%', sm: '300px', md: '400px', lg: '480px' }}
+					sizes="(max-width: 768px) 100vw,
+							(max-width: 1200px) 50vw,
+							33vw
+							"
 				/>
 			</Flex>
 			<Stack spacing={6} w={'full'}>

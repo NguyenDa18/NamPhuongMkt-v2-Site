@@ -11,7 +11,6 @@ import {
 	useDisclosure,
 	useColorMode,
 	useColorModeValue,
-	Stack,
 	Text,
 	Menu,
 	MenuButton,
@@ -113,6 +112,7 @@ export default function Navbar() {
 					</HStack>
 					<Flex alignItems={'center'}>
 						<Button
+							name='call'
 							as="a"
 							href='tel:+19712551588'
 							variant={'solid'}
@@ -123,6 +123,7 @@ export default function Navbar() {
 								Call
 						</Button>
 						<Button
+							name='color mode'
 							variant={'solid'}
 							colorScheme={colorMode === 'dark' ? 'teal' : 'yellow'}
 							onClick={toggleColorMode}

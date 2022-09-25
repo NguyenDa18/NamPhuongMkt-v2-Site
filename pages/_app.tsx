@@ -6,7 +6,6 @@ import '@fontsource/raleway/400.css'
 import '@fontsource/open-sans/700.css'
 
 import React from 'react'
-import Script from 'next/script'
 import { ChakraProvider } from '@chakra-ui/react'
 import { GoogleAnalytics } from 'nextjs-google-analytics'
 
