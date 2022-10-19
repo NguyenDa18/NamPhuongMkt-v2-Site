@@ -2,11 +2,11 @@ import { GalleryImage } from '../interfaces'
 
 export const groceryPhotos: GalleryImage[] = [
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1570258422/namphuong/grocery/candy-shelf_z6y12h.jpg',
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_70/v1570258422/namphuong/grocery/candy-shelf_z6y12h.jpg',
 		'caption': 'Candy shelf'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1567927996/namphuong/grocery/candies_yjegsv.jpg',
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_70/v1567927996/namphuong/grocery/candies_yjegsv.jpg',
 		'caption': 'Sweet candies and treats'
 	},
 	{
@@ -16,6 +16,10 @@ export const groceryPhotos: GalleryImage[] = [
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611088610/namphuong/grocery/foods/IMG_6289_cg4bsu.jpg',
 		'caption': 'Chips shelf'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_60/v1666148675/NPMkt/grocery/IMG_4244_me31wo.jpg',
+		'caption': 'Satay sauce'
 	},
 	{
 		'src': '/images/grocery/IMG_4183.jpg',

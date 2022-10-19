@@ -25,20 +25,20 @@ interface FeatureProps {
 }
   
 const Feature = ({ title, text, icon }: FeatureProps) => (
-		<Stack>
-			<Flex
-				w={16}
-				h={16}
-				align={'center'}
-				justify={'center'}
-				rounded={'full'}
-				bg={useColorModeValue('yellow.400', 'teal.300')}
-				mb={1}>
-				{icon}
-			</Flex>
-			<Text fontWeight={600}>{title}</Text>
-			<Text color={useColorModeValue('black', 'gray.200')}>{text}</Text>
-		</Stack>
+	<Stack>
+		<Flex
+			w={16}
+			h={16}
+			align={'center'}
+			justify={'center'}
+			rounded={'full'}
+			bg={useColorModeValue('yellow.400', 'teal.300')}
+			mb={1}>
+			{icon}
+		</Flex>
+		<Text fontWeight={600}>{title}</Text>
+		<Text color={useColorModeValue('black', 'gray.200')}>{text}</Text>
+	</Stack>
 )
 
   

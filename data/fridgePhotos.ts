@@ -107,13 +107,6 @@ export const fridgePhotos: GalleryImage[] = [
 		'caption': 'Misos and Pho noodles'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575619167/namphuong/fridge/quaileggs_btwsse.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1575619167/namphuong/fridge/quaileggs_btwsse.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 300,
-		'caption': 'Eggs and dried shrimp'
-	},
-	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1610005767/namphuong/fridge/nem_nuong_pcyhzi.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1610005767/namphuong/fridge/nem_nuong_pcyhzi.jpg',
 		'thumbnailHeight': 350,
@@ -126,20 +119,6 @@ export const fridgePhotos: GalleryImage[] = [
 		'thumbnailHeight': 350,
 		'thumbnailWidth': 500,
 		'caption': 'Shrimp and mussels'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1610006211/namphuong/fridge/seafood_shrimps_mollusks_oy0u2c.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1610006211/namphuong/fridge/seafood_shrimps_mollusks_oy0u2c.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Squid, shrimp, mussels, octopus'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261962/namphuong/fridge/bovien_jj10xe.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570261962/namphuong/fridge/bovien_jj10xe.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Fish and beef balls'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262160/namphuong/fridge/kafir_twl9wv.jpg',

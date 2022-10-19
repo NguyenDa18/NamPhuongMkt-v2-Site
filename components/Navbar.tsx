@@ -32,7 +32,6 @@ const Links: NavbarLink[] = [
 
 const GalleryLinks: NavbarLink[] = [
 	{name: 'Grocery', link: '/photos/grocery'},
-	{name: 'Kitchen Supplies', link: '/photos/kitchen'},
 	{name: 'Fresh Vegetables', link: '/photos/vegetables'},
 	{name: 'Fridge Products', link: '/photos/fridge'},
 	{name: 'Inside', link: '/photos/inside'},
