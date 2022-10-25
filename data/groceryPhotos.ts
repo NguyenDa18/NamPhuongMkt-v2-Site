@@ -2,42 +2,48 @@ import { GalleryImage } from '../interfaces'
 
 export const groceryPhotos: GalleryImage[] = [
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_70/v1570258422/namphuong/grocery/candy-shelf_z6y12h.jpg',
-		'caption': 'Candy shelf'
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666678740/NPMkt/grocery/IMG_4237_nq7tyr.jpg',
+		'caption': 'Drinks and snacks on display'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_70/v1567927996/namphuong/grocery/candies_yjegsv.jpg',
-		'caption': 'Sweet candies and treats'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570259066/namphuong/grocery/chips_vlxdzg.jpg',
-		'caption': 'Assorted shrimp chips'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611088610/namphuong/grocery/foods/IMG_6289_cg4bsu.jpg',
-		'caption': 'Chips shelf'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_60/v1666148675/NPMkt/grocery/IMG_4244_me31wo.jpg',
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666148675/NPMkt/grocery/IMG_4244_me31wo.jpg',
 		'caption': 'Satay sauce'
 	},
 	{
-		'src': '/images/grocery/IMG_4183.jpg',
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1662276220/NPMkt/grocery/IMG_4184_ghh8r7.jpg',
+		'caption': 'Panko and hoisin sauces'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1662276219/NPMkt/grocery/IMG_4185_k5t4u0.jpg',
+		'caption': 'Cooking oils and canned goods'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666677576/NPMkt/grocery/IMG_4189_nroxof.jpg',
+		'caption': 'Assorted spices'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1662276188/NPMkt/grocery/IMG_4183_x31kh3.jpg',
 		'caption': 'Curry pastes'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1571203108/namphuong/grocery/quocviet_gmdomb.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1571203108/namphuong/grocery/quocviet_gmdomb.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Quoc Viet soup bases'
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1662276218/NPMkt/grocery/IMG_4188_f58bbz.jpg',
+		'caption': 'Curry pastes'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611089273/namphuong/grocery/foods/IMG_6218_u1zobq.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1611089273/namphuong/grocery/foods/IMG_6218_u1zobq.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Dashi Soup stock'
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666677978/NPMkt/grocery/IMG_4275_jkv2gr.jpg',
+		'caption': 'Hot sauces'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666677847/NPMkt/grocery/IMG_4273_bticpa.jpg',
+		'caption': 'Oyster sauces'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666678150/NPMkt/grocery/IMG_4272_cdo92m.jpg',
+		'caption': 'Variety of sauces'
+	},
+	{
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1666678263/NPMkt/grocery/IMG_4271_dmfbow.jpg',
+		'caption': 'Quoc Viet soup bases and teas'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570257881/namphuong/grocery/front-shelf_tzlsb3.jpg',
@@ -68,25 +74,8 @@ export const groceryPhotos: GalleryImage[] = [
 		'caption': 'Yan Yan and Hello Panda snacks'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570258123/namphuong/grocery/teas_qysdhs.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570258123/namphuong/grocery/teas_qysdhs.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
+		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1666678375/NPMkt/grocery/IMG_4269_zvlri9.jpg',
 		'caption': 'Teas on display'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570260327/namphuong/grocery/teas1_wqhq9l.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570260327/namphuong/grocery/teas1_wqhq9l.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Teas on display'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611090287/namphuong/grocery/foods/IMG_6285_rhmkfc.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1611090287/namphuong/grocery/foods/IMG_6285_rhmkfc.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Teas and rice'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1611090259/namphuong/grocery/foods/IMG_6284_jeet6n.jpg',
@@ -115,13 +104,6 @@ export const groceryPhotos: GalleryImage[] = [
 		'thumbnailHeight': 350,
 		'thumbnailWidth': 500,
 		'caption': 'Hair dyes and balms'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1571203329/namphuong/grocery/chopsticks_t0hexe.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1571203329/namphuong/grocery/chopsticks_t0hexe.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Chopsticks and canned fruit'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570259673/namphuong/grocery/soysauces_ukue3c.jpg',
@@ -299,13 +281,6 @@ export const groceryPhotos: GalleryImage[] = [
 		'caption': 'Tamarind'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570260969/namphuong/grocery/sesameoils_ib6dkb.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570260969/namphuong/grocery/sesameoils_ib6dkb.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Sesame oils'
-	},
-	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570258508/namphuong/grocery/vinegars_gjvy1a.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570258508/namphuong/grocery/vinegars_gjvy1a.jpg',
 		'thumbnailHeight': 350,
@@ -322,30 +297,12 @@ export const groceryPhotos: GalleryImage[] = [
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570258622/namphuong/grocery/leeks-eggs_w7wug2.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570258622/namphuong/grocery/leeks-eggs_w7wug2.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
 		'caption': 'Leeks and quail eggs'
 	},
 	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1570260487/namphuong/grocery/cornpanko_wblgkg.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570260487/namphuong/grocery/cornpanko_wblgkg.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
 		'caption': 'Corn, peanut butter, and panko breadcrumbs'
 	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1570259450/namphuong/grocery/spices_hwnx1t.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570259450/namphuong/grocery/spices_hwnx1t.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 300,
-		'caption': 'Spices on display'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/v1570260200/namphuong/grocery/spices1_gm2se2.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570260200/namphuong/grocery/spices1_gm2se2.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 300,
-		'caption': 'Spices on display'
-	}
 ]
   

@@ -35,11 +35,6 @@ export default function PhotoCard({ photo, onImageClick }: CardProps) {
 					src={photo.src}
 				/>
 			</Box>
-			<Flex px={'4'} py={'2'} align='center' justify='space-between' w='100%'>
-				<Text>
-					{photo.caption}
-				</Text>
-			</Flex>
 		</Box>
 	)
 }
