@@ -114,20 +114,6 @@ export const fridgePhotos: GalleryImage[] = [
 		'caption': 'Nem nuong and quail'
 	},
 	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627323/namphuong/fridge/shrimp_mussels_ow22yk.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1573627323/namphuong/fridge/shrimp_mussels_ow22yk.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 500,
-		'caption': 'Shrimp and mussels'
-	},
-	{
-		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262160/namphuong/fridge/kafir_twl9wv.jpg',
-		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570262160/namphuong/fridge/kafir_twl9wv.jpg',
-		'thumbnailHeight': 350,
-		'thumbnailWidth': 300,
-		'caption': 'Kafir lime leaves and baby clams'
-	},
-	{
 		'src': 'https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262234/namphuong/fridge/drinks_vqpk83.jpg',
 		'thumbnail': 'https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570262234/namphuong/fridge/drinks_vqpk83.jpg',
 		'thumbnailHeight': 350,
