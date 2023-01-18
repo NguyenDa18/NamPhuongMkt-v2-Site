@@ -1,12 +1,9 @@
 import React from 'react'
-import { Box, Flex, Text} from '@chakra-ui/layout'
+import Image from 'next/image'
+import { Box } from '@chakra-ui/layout'
 import { useColorModeValue } from '@chakra-ui/color-mode'
-import { Image } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 
 import { GalleryImage } from '../interfaces'
-
-const MotionImg = motion(Image)
 
 interface CardProps {
     photo: GalleryImage,
@@ -26,11 +23,9 @@ export default function PhotoCard({ photo, onImageClick }: CardProps) {
 				h="200px"
 				position="relative"
 				overflow="hidden">
-				<MotionImg
-					transition={{ duration: 0.3 }}
-					whileHover={{ scale: 1.1 }}
-					w="100%"
-					h="100%"
+				<Image
+					alt="store image"
+					layout='fill'
 					objectFit="cover"
 					src={photo.src}
 				/>
